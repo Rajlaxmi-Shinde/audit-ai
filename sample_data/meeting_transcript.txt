@@ -1,0 +1,59 @@
+Meeting: Q2 ISO 27001 Compliance Review
+Date: 2026-06-15
+Attendees: Sarah Lin (Compliance Lead), Bob Martinez (IT Ops), Priya Nair (Security Engineer), Dave Chen (Engineering Manager)
+
+Sarah Lin: Let's start the quarterly compliance review. First item, firewall patches. Bob, where are we?
+
+Bob Martinez: Production servers are fully patched as of last week. Development servers are still behind though — we have two dev boxes running the old patch set. I flagged it to the team but nobody's picked it up yet.
+
+Sarah Lin: Okay, that needs an owner. Dave, can your team take that?
+
+Dave Chen: Yeah, we can get the dev servers patched. Give us until next Friday.
+
+Sarah Lin: Great, let's log that as an action item — update development servers with the latest security patches, owner Dave's team, due next Friday.
+
+Sarah Lin: Next, password policy. When was it last reviewed?
+
+Priya Nair: Honestly, it hasn't been reviewed in over a year. We're still on the old 90-day rotation policy. I think with everything moving toward passwordless and MFA, we should revisit whether rotation even makes sense anymore.
+
+Sarah Lin: Agreed, that ties into the next item — MFA enforcement. Priya, is MFA enabled across critical systems?
+
+Priya Nair: It's enabled for email and VPN, but we haven't formally evaluated whether it's enforced consistently across all the critical systems — like the admin panel for the CRM. I don't have a clear answer on that yet.
+
+Sarah Lin: Okay, so that's an evaluation gap, not a confirmed failure. Let's note MFA enforcement needs evaluation.
+
+Sarah Lin: Backup logs — Bob, weekly review status?
+
+Bob Martinez: Backup jobs themselves are running fine every night, no failures. But I'll be honest, nobody's actually been reviewing the logs. It's been about a month since anyone checked them.
+
+Sarah Lin: That's a compliance gap. We need someone accountable for that weekly.
+
+Bob Martinez: I can own that. I'll review backup logs every Monday going forward.
+
+Sarah Lin: Perfect, logging that — Bob owns weekly backup log review starting this Monday.
+
+Sarah Lin: Disaster recovery drill — did we run one this quarter?
+
+Dave Chen: No, we didn't. It kept getting deprioritized against the release schedule. That's on us.
+
+Sarah Lin: That's a high-severity gap given ISO 27001 requires quarterly DR drills. We need to schedule one as soon as possible — this can't slip another quarter.
+
+Dave Chen: Understood, I'll get it scheduled before end of month.
+
+Sarah Lin: Antivirus definitions?
+
+Priya Nair: Those are automated, updating daily across all endpoints. No issues there.
+
+Sarah Lin: Good, that one's compliant. Critical vulnerabilities documentation — anyone have updates?
+
+Bob Martinez: Nothing to report from my side, we haven't discussed that this quarter.
+
+Sarah Lin: Noted, we'll mark that as not discussed and pick it up next meeting.
+
+Sarah Lin: Anything else before we close? Action item owners assigned, target dates set for the high-risk items — I think we're in good shape to write this up.
+
+Dave Chen: One more thing — Rushikesh actually rolled off the project last month. His access should've been revoked as part of offboarding.
+
+Bob Martinez: I'll double check his Azure DevOps and Teams access today and confirm it's been pulled.
+
+Sarah Lin: Please do, and let's make sure the offboarding checklist gets updated to reflect that. Alright, that's everything for today. I'll circulate the compliance report by end of week.
