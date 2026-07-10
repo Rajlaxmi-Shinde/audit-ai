@@ -1,42 +1,19 @@
-# ===========================
-# LangGraph & LangChain
-# ===========================
-langgraph>=0.6.0
-langchain>=0.3.0
-langchain-core>=0.3.0
-langchain-groq>=0.3.0
+langgraph
+langchain
+langchain-core
+langchain-groq
+groq
 
-# ===========================
-# Environment Variables
-# ===========================
-python-dotenv>=1.0.1
+python-dotenv
 
-# ===========================
-# Validation
-# ===========================
-pydantic>=2.10.0
+pydantic
 
-# ===========================
-# Word Report Generation
-# ===========================
-python-docx>=1.1.2
+python-docx
 
-# ===========================
-# PDF Processing
-# ===========================
-pymupdf>=1.26.0
+json-repair
 
-# ===========================
-# JSON Parsing / Utilities
-# ===========================
-orjson>=3.10.0
+requests
 
-# ===========================
-# Logging
-# ===========================
-rich>=13.9.0
+tiktoken
 
-# ===========================
-# Typing
-# ===========================
-typing_extensions>=4.12.0
+typing_extensions
